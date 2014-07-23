@@ -82,7 +82,7 @@
                 BOOL safari8 = [[safari version] hasPrefix:@"8"];
                 
                 for (SafariWindow* window in [safari windows]) {
-                    //                    NSLog(@"%@", window.properties);
+//                    NSLog(@"%@", window.properties);
                     
                     BOOL zoomed = [window zoomed];
                     BOOL untitled = ![window titled];
@@ -94,7 +94,7 @@
                     
                     if (safari8)
                     {
-                        safariWindowIsFullscreenPlayer = !zoomed && untitled && visible && permanent && unnamed;
+                        safariWindowIsFullscreenPlayer = !zoomed && untitled && visible && permanent;
                     }
                     else
                     {
@@ -173,9 +173,11 @@
 - (void)autoDim {
     // Make sure the screen that we're going to dim isn't active
     NSNumber* mainScreenID = [[[NSScreen mainScreen] deviceDescription] objectForKey:@"NSScreenNumber"];
-    if (![mainScreenID isEqualToNumber:[Displays sharedInstance].currentDisplay])
+    NSNumber* currentDisplay = [Displays sharedInstance].currentDisplay;
+    
+    if (![mainScreenID isEqualToNumber:currentDisplay] && [[Displays displays] count] > 1)
     {
-        if (!self.dimmedAutomatically && [[Displays displays] count] > 1)
+        if ([Displays getBrightness:currentDisplay] > 0 && !self.dimmedAutomatically)
         {
             self.dimmedAutomatically = YES;
             [self dimCurrentDisplay];
