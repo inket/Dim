@@ -11,20 +11,17 @@
 
 @implementation AppDelegate
 
-#pragma mark - AutoDim/Restore triggers
+#pragma mark - AutoDim/Restore trigger
 
-- (void)spaceChanged:(NSNotification*)notification {
+- (void)trigger:(NSNotification*)notification {
     if ([[Displays displays] count] == 1)
         return;
     
     [[Dimmer sharedInstance] dimOrRestoreIfNeeded];
-}
-
-- (void)appActivated:(NSNotification*)note {
-    if ([[Displays displays] count] == 1)
-        return;
     
-    [[Dimmer sharedInstance] dimOrRestoreIfNeeded];
+    // OS X Fullscreen animation is reeaally slow and seeing as we don't get correct values
+    // while it's in effect, we need to retry after a small delay
+    [[Dimmer sharedInstance] performSelector:@selector(dimOrRestoreIfNeeded) withObject:nil afterDelay:0.5];
 }
 
 #pragma mark - Dim/Restore actions
@@ -55,9 +52,9 @@
     
     if ([[[[self displayList] menu] itemArray] count] > 1 && self.autoDimSetting)
     {
-        startObserving(@selector(spaceChanged:), NSWorkspaceActiveSpaceDidChangeNotification);
-        startObserving(@selector(spaceChanged:), @"NSWorkspaceActiveDisplayDidChangeNotification");
-        startObserving(@selector(appActivated:), NSWorkspaceDidActivateApplicationNotification);
+        startObserving(@selector(trigger:), NSWorkspaceActiveSpaceDidChangeNotification);
+        startObserving(@selector(trigger:), @"NSWorkspaceActiveDisplayDidChangeNotification");
+        startObserving(@selector(trigger:), NSWorkspaceDidActivateApplicationNotification);
     }
 }
 
