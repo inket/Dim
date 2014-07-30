@@ -167,6 +167,29 @@
 
 #pragma mark Setting up keyboard shortcuts
 
+- (BOOL)shortcutRecorder:(SRRecorderControl *)aRecorder shouldUnconditionallyAllowModifierFlags:(NSUInteger)aModifierFlags forKeyCode:(unsigned short)aKeyCode {
+    BOOL allowedModifier = SRCocoaModifierFlagsMask & aModifierFlags;
+    BOOL isAFunctionKey = NO;
+    
+    switch (aKeyCode) {
+        case 122: // F1
+        case 120: // F2
+        case 99:  // F3
+        case 118: // F4
+        case 96:  // F5
+        case 97:  // F6
+        case 98:  // F7
+        case 100: // F8
+        case 101: // F9
+        case 109: // F10
+        case 103: // F11
+        case 111: // F12
+            isAFunctionKey = YES; break;
+    }
+
+    return allowedModifier || isAFunctionKey;
+}
+
 - (void)shortcutRecorderDidEndRecording:(SRRecorderControl *)aRecorder {
     [self resetShortcut];
 }
