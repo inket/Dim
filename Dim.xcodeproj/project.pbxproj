@@ -10,10 +10,6 @@
 		B20C6F811801D0F800E4315C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C6F7F1801D0D700E4315C /* IOKit.framework */; };
 		B217C2A9196DFA39003F1790 /* Dimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = B217C2A8196DFA39003F1790 /* Dimmer.m */; };
 		B217C2AC196DFA44003F1790 /* Displays.m in Sources */ = {isa = PBXBuildFile; fileRef = B217C2AB196DFA44003F1790 /* Displays.m */; };
-		B22DBD2D17DDBCB20036F6A3 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22DBD2617DDBC330036F6A3 /* ShortcutRecorder.framework */; };
-		B22DBD2E17DDBCB30036F6A3 /* PTHotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22DBD2817DDBC330036F6A3 /* PTHotKey.framework */; };
-		B22DBD2F17DDBCB80036F6A3 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B22DBD2617DDBC330036F6A3 /* ShortcutRecorder.framework */; };
-		B22DBD3017DDBCB90036F6A3 /* PTHotKey.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B22DBD2817DDBC330036F6A3 /* PTHotKey.framework */; };
 		B2425ABA17DD5F91002809FC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2425AB917DD5F91002809FC /* Cocoa.framework */; };
 		B2425AC417DD5F91002809FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2425AC217DD5F91002809FC /* InfoPlist.strings */; };
 		B2425AC617DD5F91002809FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2425AC517DD5F91002809FC /* main.m */; };
@@ -22,36 +18,33 @@
 		B2425AD217DD5F91002809FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2425AD117DD5F91002809FC /* Images.xcassets */; };
 		B24DD21A17E0376900D17BD4 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24DD21917E0376900D17BD4 /* ScriptingBridge.framework */; };
 		B25657451874B848009E397F /* LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B25657441874B848009E397F /* LoginItem.m */; };
+		B28C02191988C5E000D87100 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28C02141988C5B100D87100 /* ShortcutRecorder.framework */; };
+		B28C021A1988C5E300D87100 /* PTHotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28C02161988C5B100D87100 /* PTHotKey.framework */; };
+		B2D01DB01988C60500DECC22 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B28C02141988C5B100D87100 /* ShortcutRecorder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B2D01DB11988C60700DECC22 /* PTHotKey.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B28C02161988C5B100D87100 /* PTHotKey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B22DBD2517DDBC330036F6A3 /* PBXContainerItemProxy */ = {
+		B28C02131988C5B100D87100 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B2ABB8BE17DDB41D0015614E /* ShortcutRecorder.xcodeproj */;
+			containerPortal = B28C020D1988C5B000D87100 /* ShortcutRecorder.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 939837800DA42965007F53F3;
 			remoteInfo = ShortcutRecorder.framework;
 		};
-		B22DBD2717DDBC330036F6A3 /* PBXContainerItemProxy */ = {
+		B28C02151988C5B100D87100 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B2ABB8BE17DDB41D0015614E /* ShortcutRecorder.xcodeproj */;
+			containerPortal = B28C020D1988C5B000D87100 /* ShortcutRecorder.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E273122E1349EC9000A84433;
 			remoteInfo = PTHotKey.framework;
 		};
-		B22DBD2917DDBC4E0036F6A3 /* PBXContainerItemProxy */ = {
+		B28C02171988C5B100D87100 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B2ABB8BE17DDB41D0015614E /* ShortcutRecorder.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9398377F0DA42965007F53F3;
-			remoteInfo = ShortcutRecorder.framework;
-		};
-		B22DBD2B17DDBC4E0036F6A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B2ABB8BE17DDB41D0015614E /* ShortcutRecorder.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E273122D1349EC9000A84433;
-			remoteInfo = PTHotKey.framework;
+			containerPortal = B28C020D1988C5B000D87100 /* ShortcutRecorder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0D6B2468180304DE00CE1142;
+			remoteInfo = Demo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -62,8 +55,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B22DBD2F17DDBCB80036F6A3 /* ShortcutRecorder.framework in CopyFiles */,
-				B22DBD3017DDBCB90036F6A3 /* PTHotKey.framework in CopyFiles */,
+				B2D01DB01988C60500DECC22 /* ShortcutRecorder.framework in CopyFiles */,
+				B2D01DB11988C60700DECC22 /* PTHotKey.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +85,8 @@
 		B24DD21917E0376900D17BD4 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		B25657431874B848009E397F /* LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginItem.h; sourceTree = "<group>"; };
 		B25657441874B848009E397F /* LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginItem.m; sourceTree = "<group>"; };
+		B28C020D1988C5B000D87100 /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = ShortcutRecorder/ShortcutRecorder.xcodeproj; sourceTree = SOURCE_ROOT; };
 		B29C5DC9186FE7DD00F5AFED /* WebKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebKit.h; sourceTree = "<group>"; };
-		B2ABB8BE17DDB41D0015614E /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = ../../ShortcutRecorder/ShortcutRecorder.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,24 +96,15 @@
 			files = (
 				B20C6F811801D0F800E4315C /* IOKit.framework in Frameworks */,
 				B24DD21A17E0376900D17BD4 /* ScriptingBridge.framework in Frameworks */,
+				B28C02191988C5E000D87100 /* ShortcutRecorder.framework in Frameworks */,
+				B28C021A1988C5E300D87100 /* PTHotKey.framework in Frameworks */,
 				B2425ABA17DD5F91002809FC /* Cocoa.framework in Frameworks */,
-				B22DBD2D17DDBCB20036F6A3 /* ShortcutRecorder.framework in Frameworks */,
-				B22DBD2E17DDBCB30036F6A3 /* PTHotKey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B22DBD2117DDBC330036F6A3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B22DBD2617DDBC330036F6A3 /* ShortcutRecorder.framework */,
-				B22DBD2817DDBC330036F6A3 /* PTHotKey.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		B2425AAD17DD5F91002809FC = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +146,7 @@
 		B2425ABF17DD5F91002809FC /* Dim */ = {
 			isa = PBXGroup;
 			children = (
-				B2ABB8BE17DDB41D0015614E /* ShortcutRecorder.xcodeproj */,
+				B28C020D1988C5B000D87100 /* ShortcutRecorder.xcodeproj */,
 				B2425ACB17DD5F91002809FC /* AppDelegate.h */,
 				B2425ACC17DD5F91002809FC /* AppDelegate.m */,
 				B217C2AA196DFA43003F1790 /* Displays.h */,
@@ -191,6 +175,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B28C020E1988C5B000D87100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B28C02141988C5B100D87100 /* ShortcutRecorder.framework */,
+				B28C02161988C5B100D87100 /* PTHotKey.framework */,
+				B28C02181988C5B100D87100 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,8 +201,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B22DBD2A17DDBC4E0036F6A3 /* PBXTargetDependency */,
-				B22DBD2C17DDBC4E0036F6A3 /* PBXTargetDependency */,
 			);
 			name = Dim;
 			productName = Dim;
@@ -237,8 +229,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B22DBD2117DDBC330036F6A3 /* Products */;
-					ProjectRef = B2ABB8BE17DDB41D0015614E /* ShortcutRecorder.xcodeproj */;
+					ProductGroup = B28C020E1988C5B000D87100 /* Products */;
+					ProjectRef = B28C020D1988C5B000D87100 /* ShortcutRecorder.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -249,18 +241,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B22DBD2617DDBC330036F6A3 /* ShortcutRecorder.framework */ = {
+		B28C02141988C5B100D87100 /* ShortcutRecorder.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ShortcutRecorder.framework;
-			remoteRef = B22DBD2517DDBC330036F6A3 /* PBXContainerItemProxy */;
+			remoteRef = B28C02131988C5B100D87100 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B22DBD2817DDBC330036F6A3 /* PTHotKey.framework */ = {
+		B28C02161988C5B100D87100 /* PTHotKey.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PTHotKey.framework;
-			remoteRef = B22DBD2717DDBC330036F6A3 /* PBXContainerItemProxy */;
+			remoteRef = B28C02151988C5B100D87100 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B28C02181988C5B100D87100 /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = B28C02171988C5B100D87100 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -308,19 +307,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B22DBD2A17DDBC4E0036F6A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ShortcutRecorder.framework;
-			targetProxy = B22DBD2917DDBC4E0036F6A3 /* PBXContainerItemProxy */;
-		};
-		B22DBD2C17DDBC4E0036F6A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PTHotKey.framework;
-			targetProxy = B22DBD2B17DDBC4E0036F6A3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B2425AC217DD5F91002809FC /* InfoPlist.strings */ = {
