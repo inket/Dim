@@ -88,13 +88,14 @@
                     BOOL untitled = ![window titled];
                     BOOL visible = [window visible];
                     BOOL permanent = ![window closeable];
+                    BOOL miniaturizable = [window miniaturizable];
                     BOOL unnamed = [window name] == nil || [[window name] isEqualToString:@""];
                     
                     BOOL safariWindowIsFullscreenPlayer = NO;
                     
                     if (safari8)
                     {
-                        safariWindowIsFullscreenPlayer = !zoomed && untitled && visible && permanent;
+                        safariWindowIsFullscreenPlayer = visible && zoomed && !miniaturizable && untitled && [window.name isEqualToString:@"Safari"] && permanent;
                     }
                     else
                     {
