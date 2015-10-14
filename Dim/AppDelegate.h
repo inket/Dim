@@ -9,11 +9,11 @@
 #import <Cocoa/Cocoa.h>
 #import <IOKit/graphics/IOGraphicsLib.h>
 #import <ShortcutRecorder/ShortcutRecorder.h>
-#import <PTHotKey/PTHotKey.h>
-#import <PTHotKey/PTHotKey+ShortcutRecorder.h>
-#import <PTHotKey/PTHotKeyCenter.h>
-#import <PTHotKey/PTKeyCodeTranslator.h>
-#import <PTHotKey/PTKeyCombo.h>
+#import <ShortcutRecorder/PTHotKey+ShortcutRecorder.h>
+#import <ShortcutRecorder/PTHotKey+ShortcutRecorder.h>
+#import <ShortcutRecorder/PTHotKeyCenter.h>
+#import <ShortcutRecorder/PTKeyCodeTranslator.h>
+#import <ShortcutRecorder/PTKeyCombo.h>
 #import "Displays.h"
 #import "Dimmer.h"
 

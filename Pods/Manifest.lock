@@ -1,0 +1,21 @@
+PODS:
+  - ShortcutRecorder (2.13):
+    - ShortcutRecorder/PTHotKey (= 2.13)
+  - ShortcutRecorder/PTHotKey (2.13)
+
+DEPENDENCIES:
+  - ShortcutRecorder (from `git://github.com/Kentzo/ShortcutRecorder.git`)
+
+EXTERNAL SOURCES:
+  ShortcutRecorder:
+    :git: git://github.com/Kentzo/ShortcutRecorder.git
+
+CHECKOUT OPTIONS:
+  ShortcutRecorder:
+    :commit: 178f80fd607477073e13423a759fa11d3e1fece1
+    :git: git://github.com/Kentzo/ShortcutRecorder.git
+
+SPEC CHECKSUMS:
+  ShortcutRecorder: 683071e0106fb1408b6bb11521975d2be43861b5
+
+COCOAPODS: 0.39.0

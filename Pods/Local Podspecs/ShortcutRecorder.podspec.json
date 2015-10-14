@@ -1,0 +1,36 @@
+{
+  "name": "ShortcutRecorder",
+  "homepage": "https://github.com/Kentzo/ShortcutRecorder",
+  "summary": "",
+  "version": "2.13",
+  "source": {
+    "git": "git://github.com/Kentzo/ShortcutRecorder.git",
+    "branch": "master"
+  },
+  "authors": {
+    "Ilya Kulakov": "kulakov.ilya@gmail.com"
+  },
+  "source_files": "Library/*.{h,m}",
+  "frameworks": [
+    "Carbon",
+    "Cocoa"
+  ],
+  "resource_bundles": {
+    "ShortcutRecorder": [
+      "Resources/*.lproj",
+      "Resources/*.png"
+    ]
+  },
+  "requires_arc": true,
+  "prefix_header_file": "Library/Prefix.pch",
+  "platforms": {
+    "osx": "10.6"
+  },
+  "subspecs": [
+    {
+      "name": "PTHotKey",
+      "source_files": "PTHotKey/*.{h,m}",
+      "requires_arc": false
+    }
+  ]
+}

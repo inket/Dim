@@ -1,0 +1,12 @@
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#endif
+
+//
+// Prefix header for all source files of the 'ShortcutRecorder' target in the 'ShortcutRecorder' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <Carbon/Carbon.h>
+#endif
